@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://coach1c.ru/sitemap.xml
