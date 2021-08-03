@@ -1,7 +1,5 @@
 function Menu(){
     
-	this.title = "1С-тренер",
-	
     this.blockquote = "",
     this.cite = "",
     
