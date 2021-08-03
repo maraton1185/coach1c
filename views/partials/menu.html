@@ -1,0 +1,31 @@
+<div id="menu">
+<header class="main">
+   <strong>Курс-репетитор по программированию в 1С 8.3</strong>
+   <button name="search"> <a target='_blank' href="/app">Вход в курс</a>  </button>   
+</header>
+
+<nav>
+<ul class="top-menu">
+ {{#each nav}}
+	{{#if visible}} 
+    <li {{#if active}} 
+        class="active"
+        {{/if}} 
+    >
+    <a  {{#if isBlank}} 
+        target='_blank' 
+        {{/if}} 
+        href={{ref}}>{{name}}</a>    
+    </li>
+	{{/if}} 
+ {{/each}}
+</ul>
+</nav>
+<blockquote>
+    <p>
+        {{blockquote}}
+    </p>
+    <cite>{{cite}}</cite>
+</blockquote>          
+
+</div>

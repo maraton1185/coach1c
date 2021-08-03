@@ -1,0 +1,463 @@
+body {
+	color: #8f8f8f;
+	font: 16px Tahoma, sans-serif;
+	background: #f8f8f8 url(images/bg.png);
+	/*border-top: 5px solid #7e7e7e;*/
+	margin: 0;
+}
+
+#menu {
+    position: fixed; 
+    top: 0; 
+    width: 960px; 
+    overflow: hidden;
+    background: #f8f8f8 url(images/bg.png);
+	border-top: 5px solid #7e7e7e;
+}
+#body {
+    margin-top: 220px;
+}
+
+#heading {
+	background: transparent url(images/h1-bg.png);
+	margin: 10px 0;
+	padding-left: 20px;
+    font: 20px Tahoma, sans-serif;
+}
+
+blockquote {
+	margin: 10px 0;
+	background: MediumOrchid; /*#29c5e6;*/
+	padding: 10px 20px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+    /*font-size: 12px;*/
+}
+
+blockquote p {
+	color: #fff;
+	/*font-style: italic;*/
+	font-size: 20px;
+	margin: 0;
+}
+
+blockquote cite {
+	display: block;
+	font-size: 16px;
+	font-style: normal;
+	color: #fff;
+	margin: 0;
+	text-align: right;
+}
+
+#wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+
+.section{
+    line-height: 130%; 
+    margin:20px auto; 
+    text-align:left; 
+    color:rgb(59, 89, 152); 
+    font-size:x-large;
+    font-weight: bold;
+    color: green;
+}
+
+.frame{
+    line-height: 130%; margin:20px auto; 
+    border: 3px solid green; 
+    background-color: #cde9fa; 
+    padding: 15px; 
+    font-size: large; 
+    color: black;    
+}
+
+.frame.main{
+    background-color: Gold;
+    padding: 5px;    
+}
+
+.frame.main li{
+    list-style-type: none;
+}
+
+img {
+	border: 0;
+}
+
+input[type="text"] {
+	background-color: #f3f3f3;
+	border: 1px solid #e7e7e7;
+	height: 30px;
+	color: #b2b2b2;
+	padding: 0 10px;
+	vertical-align: top;
+}
+
+button {
+	color: white;
+	background-color: rgb(59, 89, 152);
+	border: none;
+	height: 32px;
+	font-family: 'Oswald', sans-serif;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font: 18px 'Oswald', sans-serif;
+	padding: 0 20px; 
+}
+
+button.ref {
+	margin: 10px;
+}
+	
+nav {
+	background: #f3f3f3;
+	border: 1px solid #e7e7e7;
+}
+
+h1 {
+	display: inline-block;
+	color: #7e7e7e;
+	font: 40px/40px 'Oswald', sans-serif;
+	background: url(images/bg.png);
+	margin: 0;
+	padding: 0 10px;
+}
+
+header.main {
+	padding: 20px 0;
+}
+
+header.view {
+	margin-left: 280px;
+	padding-bottom: 10px;
+}
+
+aside {
+    position: fixed;
+	/*float: left;*/
+	width: 250px;
+}
+
+aside > h2 {
+	background: #29c5e6;
+	font: 14px 'Oswald', sans-serif;
+	color: #fff;
+	padding: 10px;
+	margin: 30px 0 0 0;
+}
+
+aside > p {
+	background: #f3f3f3;
+	border: 1px solid #e7e7e7;
+	padding: 10px;
+	margin: 0;
+}
+
+section {
+	margin-left: 280px;
+	padding-bottom: 10px;
+}
+
+section.page {
+	margin: 0px;
+	padding-bottom: 10px;
+}
+
+button[name="search"] {
+	float: right;
+}
+
+footer {
+	background-color: #7e7e7e;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style-position: inside;
+	font: 18px 'Oswald', sans-serif;
+	padding: 10px;
+}
+
+.top-menu li {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+.top-menu li.active {
+	background: rgb(59, 89, 152);
+	color: #fff;
+}
+
+.top-menu li.active a {
+	color: white;
+}
+
+.top-menu a {
+	color: #b2b2b2;
+}
+
+.aside-menu li {
+	font-weight: 300;
+	list-style-type: square;
+	border-top: 1px solid #e7e7e7;
+}
+
+.aside-menu li:first-child {
+	border: none;
+}
+
+.aside-menu li.active {
+	color: #29c5e6;
+}
+.aside-menu li.active a{
+	color: #29c5e6;
+}
+.aside-menu a {
+	color: #8f8f8f;
+}
+
+.ref {
+	display:inline; 
+    color: green;
+}
+
+figure {
+	display: inline-block;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+figure img {
+	display: block;
+	border: 1px solid #fff;
+	outline: 1px solid #c9c9c9;
+}
+
+section > figure + figure {
+	margin-left: 28px;
+}
+
+p {
+	margin: 20px 0;
+}
+
+section > h2 {
+	background: #29c5e6;
+	font: 30px 'Oswald', sans-serif;
+	font-weight: 300;
+	color: #fff;
+	padding: 0 10px;
+	margin: 30px 0 0 0;
+    
+}
+
+figure figcaption {
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+figure figcaption span {
+	display: block;
+	font-size: 14px;
+	color: #29c5e6;
+}
+
+.team-row figure {
+	margin-top: 20px;
+}
+
+.team-row figure + figure {
+	margin-left: 43px;
+}
+
+footer {
+	background: #7e7e7e;
+	color: #dbdbdb;
+	font-size: 11px;
+}
+
+#footer {
+	max-width: 960px;
+	margin: auto;
+	padding: 10px 0;
+	height: 90px;
+}
+
+footer h3 {
+	font: 14px 'Oswald', sans-serif;
+	color: #fff;
+	border-bottom: 1px solid #919191;
+	margin: 0 0 10px 0;
+}
+
+footer a {
+	color: #dbdbdb;
+}
+
+#twitter time a {
+	color: #b4aeae;
+}
+
+footer p {
+	margin: 5px 0;
+}
+
+#twitter {
+	float: left;
+	width: 300px;
+}
+
+#twitter p {
+	padding-right: 15px;
+}
+
+#sitemap {
+	width: 750px;
+	float: left;
+	margin-left: 20px;
+	padding-right: 15px;
+}
+
+#sitemap div {
+	display: inline-block;
+}
+
+#sitemap div + div {
+	margin-left: 40px;
+}
+
+#sitemap a {
+	display: block;
+	text-decoration: none;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+#sitemap a:hover {
+	text-decoration: underline;
+}
+
+#social {
+	float: left;
+	margin-left: 20px;
+	width: 130px;
+}
+
+.social-icon {
+	width: 30px;
+	height: 30px;
+	background: url(images/social.png) no-repeat;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.social-icon-small  {
+	width: 16px;
+	height: 16px;
+	background: url(images/social-small.png) no-repeat;
+	display: inline-block;
+	margin: 5px 6px 0 0;
+}
+
+.twitter {
+	background-position: 0 0;
+}
+
+.facebook {
+	background-position: -30px 0;
+}
+
+.google-plus {
+	background-position: -60px 0;
+}
+
+.vimeo {
+	background-position: 0 0;
+}
+
+.youtube {
+	background-position: -16px 0;
+}
+
+.flickr {
+	background-position: -32px 0;
+}
+
+.instagram {
+	background-position: -48px 0;
+}
+
+.rss {
+	background-position: -64px 0;
+}
+
+#footer-logo {
+	float: right;
+	margin-top: 20px;
+	font-size: 10px;
+	text-align: right;
+}
+
+.content_table p {
+	margin: 5px;
+}
+
+.content_table li {
+	margin: 5px;
+}
+
+.content_table ul {
+	margin-top: 0px;
+}
+
+.content_table td {
+	font-size:medium;
+}
+
+.content_table .chapter {
+	font-size:large;
+	color: black;	
+}
+
+.page .heading{
+	font-size:xx-large; 
+	margin:10px 0px;
+	color: black;
+}
+
+.page#links table td{
+	border: 1px solid black;
+    padding: 10px;
+}
+
+page#links table{
+	margin-bottom:20px
+}
+
+.page#links table caption{
+	text-align: left;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.page#links a{
+	display:inline; 
+	color:green;
+}
