@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /*:8080*
-Sitemap: http://coach1c.ru/sitemap.xml
+Sitemap: https://coach1c.ru/sitemap.xml
