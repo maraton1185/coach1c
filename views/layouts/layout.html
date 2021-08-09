@@ -28,7 +28,9 @@
 Ваш код разбирается детально, пробелы показываются сразу, помощь оказывается своевременно.
 Для людей с техническим образованием."/>
 	
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!--link rel="stylesheet" href="style.css" type="text/css"/-->
+    <link rel = "stylesheet/less" href = "styles.less"> 
+    <script src="//cdn.jsdelivr.net/npm/less@4.1.1" ></script>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     
 	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Merriweather &display=swap" rel="stylesheet">
@@ -40,13 +42,10 @@
 <body>
 
 <div id="wrapper">
-    {{> menu}}
-    <div id="body">
+    {{> header}}
     {{{body}}}
-	</div>
 </div>
-
-{{> footer}}
+    {{> footer}}
 
 </body>
 <html>

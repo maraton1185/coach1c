@@ -31,6 +31,10 @@ body {
 	font: medium var(--fontText), sans-serif;
 	
 	margin: 0;
+    
+    display: grid;
+    grid-template-areas: 'header header' 'content sidebar' 'footer footer';
+    grid-template-columns: auto 240px;
 }
 
 #wrapper {
@@ -38,15 +42,17 @@ body {
 	margin: auto;	
 }
 
-#menu {
+#header {
     position: fixed; 
     top: 0; 
     width: var(--screenWidth); 
     overflow: hidden;
     background: var(--colorBack) url(images/bg.png);
 	border-top: 5px solid var(--colorHighlight);
+    
+    grid-area: header;
 }
-#body {
+#content {
     margin-top: var(--bodyMarginTop);
 	display:flex;
 }
@@ -63,6 +69,7 @@ header.view {
 	/*margin-left: var(--sectionMargin);*/
 	padding-bottom: 10px;
 }
+
 @media (min-width: 1200px){
 aside {
     /*position: fixed;*/
