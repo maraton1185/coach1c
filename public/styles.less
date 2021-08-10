@@ -12,10 +12,13 @@
   @colorText: 		#012A36;
   @colorWhiteText: #FFFFFF;
   
-  @screenWidth: 	70%;
-  @screenWidth1: 	90%;
-  @screenLimit: 	800px; 
+  @screenWidth: 	    70%;
+  @screenWidth1: 	    90%;
+  @screenLimit: 	    800px; 
+  @screenLimitIFrame:   1200px;
+  @asideWidth: 	        400px; 
 
+@viewport { width: device-width;}
 
 body {
 	color: @colorText;
@@ -33,18 +36,25 @@ body {
 
 #wrapper {
 	
+    display: grid;
+    grid-template-areas: 'header header' 'sidebar content';
+    
     @media (max-width: @screenLimit){
         max-width: @screenWidth1;
+        grid-template-columns: auto;
+        
+        
     }
     
     @media (min-width: @screenLimit){
         max-width: @screenWidth;
+        grid-template-columns: @asideWidth auto;
+        
     }
 	margin: auto;	
     
-    display: grid;
-    grid-template-areas: 'header header' 'sidebar content';
-    grid-template-columns: auto;
+    
+    
 }
 
 #header {
@@ -74,13 +84,13 @@ body {
     
     iframe{
     
-        @media (min-width: @screenLimit){
+        @media (min-width: @screenLimitIFrame){
             width: 700px;
             height: 400px;
         }
 
 
-        @media (max-width: @screenLimit){
+        @media (max-width: @screenLimitIFrame){
             /*display: none;*/
             width: 250px;
             height: 150px;
@@ -100,13 +110,13 @@ aside {
     font: small @fontHead, sans-serif;
     margin: 0 20px;
     
-    @media (min-width: 1200px){
+    @media (min-width: @screenLimit){
         /*position: fixed;*/
         /*top: 20%;*/
     }
 
 
-    @media (max-width: 1200px){
+    @media (max-width: @screenLimit){
         /*position: fixed;*/
         /*top: 20%;*/
         display: none;
@@ -140,6 +150,9 @@ header.main {
         text-align: left;
         
         padding: 20px 0;
+        a.ref{
+            color: @colorHighlight; 
+        }
     }
     
 header.aside {
@@ -154,7 +167,8 @@ header.aside {
 }
 
 blockquote {
-	max-width: @screenWidth;
+	/*max-width: @screenWidth;*/
+    text-align: right;
 	margin: 10px auto;
 	
 	background: @colorQuote;
@@ -175,7 +189,7 @@ blockquote {
         font-size: medium;
         font-style: normal;
         color: @colorWhiteText;
-        text-align: right;		
+        /*text-align: left;		*/
     }
 }
 
@@ -257,9 +271,9 @@ ul li{
     background-color: @colorAttension;
     padding: 5px;    
     li{
-        /*list-style-type: none;*/
+        list-style-type: none;
         margin: 10px;
-        font-size:large;
+        /*font-size:large;*/
     }
 }
 
@@ -275,7 +289,6 @@ button {
 	font-family: @fontHead, sans-serif;
 	
     padding: 5px; 
-	/*height: 32px;*/
 
     a {
         color: @colorWhiteText;
@@ -288,6 +301,9 @@ button {
 
 button.ref {
 	margin: 10px;
+    a{
+        font-size: xx-large;
+    }
 }
 	
 button[name="CourseEnter"] {
