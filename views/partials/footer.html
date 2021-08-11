@@ -47,3 +47,28 @@
     </div>
     
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(function() {
+  // Generic selector to be used anywhere
+  $(".aside-menu li a").click(function(e) {
+
+    // Get the href dynamically
+    var destination = $(this).attr('href');
+    //console.log($(destination));
+    // Prevent href=“#” link from changing the URL hash (optional)
+    e.preventDefault();
+
+    $(".aside-menu li").removeClass('active');
+    $(this).parent().addClass('active');
+    
+    // Animate scroll to destination
+    $('html, body').animate({
+      scrollTop: $(destination).offset().top-150
+    }, 'fast');
+    
+  });
+});
+</script>

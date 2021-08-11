@@ -48,7 +48,7 @@ body {
     
     @media (min-width: @screenLimit){
         max-width: @screenWidth;
-        grid-template-columns: @asideWidth auto;
+        grid-template-columns: fit-content(@asideWidth) auto;
         
     }
 	margin: auto;	
@@ -255,6 +255,16 @@ ul li{
 .x-large{
 	font-size:x-large;
 }
+
+.medium{
+	font-size:medium;
+}
+
+.italic{
+	font-style: italic;
+    /*font-decoration: underline;*/
+}
+
 .frame{
     line-height: 130%; 
     border: 3px solid @colorHighlight; 
@@ -400,33 +410,7 @@ footer {
     }
 }
 
-
-.content_table {
-    p {
-        margin: 5px;
-    }
-    li {
-        margin: 5px;
-    }
-    ul {
-        margin-top: 0px;
-    }   
-    td {
-        font-size:medium;
-    }
-    .chapter {
-        font-size:large;
-        color: @colorText;	
-    }
-}
-
-.page .heading{
-	font-size:xx-large; 
-	margin:10px 0px;
-	color: @colorText
-}
-
-.page#links {
+#links {
     table{  
         margin-bottom:20px    
         td{
