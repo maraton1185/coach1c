@@ -13,12 +13,10 @@
   @colorWhiteText: #FFFFFF;
   
   @screenWidth: 	    70%;
-  @screenWidth1: 	    90%;
-  @screenLimit: 	    800px; 
+  @screenWidthMobile:   90%;
+  @screenLimit: 	    1200px; 
   @screenLimitIFrame:   1200px;
   @asideWidth: 	        400px; 
-
-@viewport { width: device-width;}
 
 body {
 	color: @colorText;
@@ -40,7 +38,7 @@ body {
     grid-template-areas: 'header header' 'sidebar content';
     
     @media (max-width: @screenLimit){
-        max-width: @screenWidth1;
+        max-width: @screenWidthMobile;
         grid-template-columns: auto;
         
         
@@ -92,8 +90,8 @@ body {
 
         @media (max-width: @screenLimitIFrame){
             /*display: none;*/
-            width: 250px;
-            height: 150px;
+            width: 450px;
+            height: 350px;
         }
     }
 } 
@@ -312,7 +310,15 @@ button {
 button.ref {
 	margin: 10px;
     a{
-        font-size: xx-large;
+    
+        @media (min-width: @screenLimit){
+           font-size: xx-large;
+        }
+        
+        @media (max-width: @screenLimit){
+           font-size: xxx-large;
+        }
+        
     }
 }
 	
@@ -346,8 +352,13 @@ footer {
     }
     
     #footer{
-
-        max-width: @screenWidth;
+        @media (min-width: @screenLimit){
+            max-width: @screenWidth;
+        }
+        @media (max-width: @screenLimit){
+            max-width: @screenWidthMobile;
+        }
+        
         margin: auto;
         padding: 10px 0;
         
@@ -358,13 +369,18 @@ footer {
             margin: 0 0 10px 0;
         }
 
-    
         #sitemap {
-            /*float: left;*/
+            display: flex;            
+        }
+        .sitemap {
+
+            margin-left: 40px;
+            
             display: flex;
-            @media (max-width: @screenLimit){
+            
+            /*@media screen and (max-width: @screenLimit){
                 flex-direction: column;
-            }
+            }*/
                 
             div {
                 display: inline-block;
@@ -378,18 +394,13 @@ footer {
                 display: block;
                 text-decoration: none;            
                 margin-bottom: 5px;
+
             }
             a:hover {
                 text-decoration: underline;
             }
             
             margin-bottom: 40px;
-/*
-            .hide1{
-                @media (max-width: @screenLimit){
-                    display: none;
-                }
-            }*/
             
             .hide2{
                 @media (max-width: @screenLimit){
