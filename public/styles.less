@@ -250,12 +250,78 @@ ul li{
 	margin: 5px;
 }
 
+.faq{
+
+}
+
+.xx-large{
+	font-size:xxx-large;
+}
+
 .x-large{
 	font-size:x-large;
 }
 
 .medium{
 	font-size:medium;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.ref {
+	display:inline; 
+    color: @colorHead;
+}
+
+.inline {
+	display:inline; 
+}
+
+.flex-image{
+    width:250px; 
+    margin:20px 40px;
+}
+.faq-item{
+    
+    img{
+        width:40px; 
+        margin:auto 50px;
+        @media (max-width: @screenLimit){
+            display: none;
+        }
+    }
+    .q{
+        @media (max-width: @screenLimit){
+            text-decoration: underline;
+        }
+        display: inline;
+    }
+    .faq-row{
+        display: flex;
+        div{
+            width: 200px;   
+            text-align: center;
+        }
+        div+div{
+            margin-left: 100px;
+        }
+        iframe{
+            height: 150px;
+            width: 200px;
+        }                        
+    }
+    .faq-video{
+        @media (max-width: @screenLimit){
+            display: none;
+        }
+    }
+    .faq-video-mobile{
+        @media (min-width: @screenLimit){
+            display: none;
+        }
+    }
 }
 
 .italic{
@@ -327,11 +393,6 @@ button[name="CourseEnter"] {
     @media (max-width: @screenLimit){
         display: none;
     }
-}
-
-.ref {
-	display:inline; 
-    color: @colorHead;
 }
 
 p {
@@ -418,25 +479,6 @@ footer {
         text-align: right;
         
         margin-bottom: 20px;
-    }
-}
-
-#links {
-    table{  
-        margin-bottom:20px    
-        td{
-            border: 1px solid @colorText;
-            padding: 10px;
-        }
-        caption{
-            text-align: left;
-            color: @colorHead;
-            margin-bottom: 10px;
-        }
-    }
-    a{
-        display:inline; 
-        color: @colorHead;
     }
 }
 
