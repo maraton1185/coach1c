@@ -1,28 +1,31 @@
-<div id="header">
+<header>
+    <div id="header">
 
-<header class="main">
-   <a class="ref" target="_blank" href="https://www.youtube.com/embed/F7Qs-FCUy3I?rel=0">
-   <strong>Курс-репетитор программиста 1С 8.3</strong></a>   
-   <button name="CourseEnter"> <a target='_blank' href="/app">Вход в курс</a>  </button>   
+        <div class="main-menu">
+           <h1 class = "inline">
+           <a class="ref" target="_blank" href="https://www.youtube.com/embed/F7Qs-FCUy3I?rel=0">
+           <strong>Курс-репетитор программиста 1С 8.3</strong>
+           </a></h1>   
+           <button name="CourseEnter"> <a target='_blank' href="/app">Вход в курс</a></button>   
+        </div>
+
+        <nav>
+        <ul class="top-menu">
+         {{#each nav}}
+            {{#if visible}} 
+            <li {{#if active}} 
+                class="active"
+                {{/if}} 
+            >
+            <a  {{#if isBlank}} 
+                target='_blank' 
+                {{/if}} 
+                href={{ref}}>{{name}}</a>    
+            </li>
+            {{/if}} 
+         {{/each}}
+        </ul>
+        </nav>
+           
+    </div>
 </header>
-
-<nav>
-<ul class="top-menu">
- {{#each nav}}
-	{{#if visible}} 
-    <li {{#if active}} 
-        class="active"
-        {{/if}} 
-    >
-    <a  {{#if isBlank}} 
-        target='_blank' 
-        {{/if}} 
-        href={{ref}}>{{name}}</a>    
-    </li>
-	{{/if}} 
- {{/each}}
-</ul>
-</nav>
-       
-
-</div>
