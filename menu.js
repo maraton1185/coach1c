@@ -19,7 +19,7 @@ function Menu(){
 	this.priceRefDemo = "https://cent.app/transfer/WZ75r3MxvJ",
 	
 	this.plan = "10",
-	this.balance = "8", 
+	this.balance = "4", 
     
     this.nav = [
         {ref: '/', name: 'Главная',  visible: true,

@@ -7,25 +7,25 @@
 </div>
 
 <div class="frame">
-На {{nextMonth}} запланировано <b>{{plan}}</b> мест.</div>
+План на {{nextMonth}} - <b>{{plan}}</b> мест.</div>
 
 <div class="frame">
-На {{currentMonth}} осталось <b>{{balance}}</b> мест.</div>
+На {{currentMonth}} осталось <b>{{balance}}</b> места.</div>
 
 <p class="section">
 Оплатить доступ</p> 
 
 <div style="display: flex; flex-direction: column">
 <button class="ref"> 
-	<a target="_blank" href="{{priceRef1}}">на 1 месяц ({{price1}} т.р.)</a>
+	<a target="_blank" href="{{priceRef1}}">на 1 месяц <br>({{price1}} т.р.)</a>
 </button>
 
 <button class="ref"> 
-	<a target="_blank" href="{{priceRef3}}">на 3 месяца ({{price3}} т.р.)</a>
+	<a target="_blank" href="{{priceRef3}}">на 3 месяца <br>({{price3}} т.р.)</a>
 </button>
 
 <button class="ref"> 
-	<a target="_blank" href="{{priceRef5}}">на 5 месяцев ({{price5}} т.р.)</a>
+	<a target="_blank" href="{{priceRef5}}">на 5 месяцев <br>({{price5}} т.р.)</a>
 </button>
 </div>
 
@@ -45,8 +45,9 @@
 <p style="font-size:large">После оплаты вы получите письмо на email.<br>
 В письме вас будет ждать <b>ссылка на личный кабинет</b>, а также <b>логин и пароль</b> для доступа.</p>
 
+<div class="contacts">
 <button class="ref"> 
-	<a target="_blank" href="mailto:{{email}}">моя почта ({{email}})</a>
+	<a target="_blank" href="mailto:{{email}}">моя почта</a>
 </button>
 
 <button class="ref"> 
@@ -56,5 +57,6 @@
 <button class="ref"> 
 	<a target="_blank" href="{{telegramChannel}}">telegram-канал курса</a>
 </button>
+</div>
 
 </section>
