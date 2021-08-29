@@ -87,4 +87,9 @@ app.get("/subscription", function(request, response){
     response.render("subscription", attr);   
 });
 
+app.get("*", function(request, response){
+    attr.setActive("/404");   
+    response.render("404", attr);   
+});
+
 app.listen(port);
