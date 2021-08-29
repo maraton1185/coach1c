@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /*:8080*
 Sitemap: https://coach1c.ru/sitemap.xml
+Host: https://coach1c.ru
