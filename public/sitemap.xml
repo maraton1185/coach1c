@@ -1,51 +1,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
-  <loc>https://coach1c.ru/</loc>
+  <loc>https://coach1c.ru</loc>
   <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>1.0</priority>
  </url>
  <url>
-  <loc>https://coach1c.ru/content/</loc>
+  <loc>https://coach1c.ru/content</loc>
   <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
  </url>
  <url>
-  <loc>https://coach1c.ru/price/</loc>
+  <loc>https://coach1c.ru/price</loc>
   <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.3</priority>
  </url>
  <url>
-  <loc>https://coach1c.ru/ownpath/</loc>
+  <loc>https://coach1c.ru/ownpath</loc>
   <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.3</priority>
  </url>
  <url>
-  <loc>https://coach1c.ru/reviews/</loc>
+  <loc>https://coach1c.ru/reviews</loc>
   <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.1</priority>
  </url>
  <url>
-  <loc>https://coach1c.ru/faq/</loc>
+  <loc>https://coach1c.ru/faq</loc>
   <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.1</priority>
  </url>
  <url>
-  <loc>https://coach1c.ru/about/</loc>
+  <loc>https://coach1c.ru/about</loc>
   <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.3</priority>
  </url>
  <url>
-  <loc>https://coach1c.ru/links/</loc>
+  <loc>https://coach1c.ru/links</loc>
   <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.5</priority>
  </url>
  
+ <url>
+  <loc>https://coach1c.ru/subscription</loc>
+  <lastmod>2021-09-18T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+ </url>
+   
 </urlset>
